@@ -18,7 +18,8 @@ Dependencies:
     - ldap3: LDAP communication with Active Directory
     - cryptography: Password encryption
     - tkinter: GUI for real-time monitoring
-
+    - PyInstaller: For converting the script into a standalone executable
+    
 License: MIT License
 
 ===============================================================================
