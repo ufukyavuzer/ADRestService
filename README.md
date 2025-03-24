@@ -159,5 +159,5 @@ Visit `http://localhost:5000/functions` to see detailed endpoint documentation, 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgments
-- Built with [Flask](https://flask.palletsprojects.com/), [ldap3](https://ldap3.readthedocs.io/), and [cryptography](https://cryptography.io/).
+- Built with [Flask](https://flask.palletsprojects.com/), [ldap3](https://ldap3.readthedocs.io/), [cryptography](https://cryptography.io/), and [PyInstaller](https://pyinstaller.org/).
 - Thanks to the open-source community!
