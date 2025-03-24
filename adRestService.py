@@ -20,7 +20,7 @@ Dependencies:
     - tkinter: GUI for real-time monitoring
     - PyInstaller: For converting the script into a standalone executable
     
-License: MIT License
+License: GNU General Public License v3.0
 
 ===============================================================================
 """
