@@ -25,7 +25,7 @@ Before you begin, ensure you have the following installed:
 - An Active Directory environment with LDAPS (LDAP over SSL) enabled
 - Administrative credentials for AD operations
   ```bash
-  pip install flask ldap3 tkinter cryptography
+  pip install flask ldap3 tkinter cryptography pyinstaller
   
 ---
 
@@ -45,7 +45,8 @@ Follow these steps to set up the project locally:
    - `ldap3`
    - `cryptography`
    - `tk`
-
+   - `pyinstaller`
+  
 3. **Configure the Service**:
    - The first run will generate a `config.txt` file.
    - Update the file with your AD details:
@@ -66,8 +67,6 @@ Follow these steps to set up the project locally:
    python adWebService.py
    - The Flask server will start on `0.0.0.0:5000`.
    - A Tkinter GUI will display service status and logs.
-
----
 
 5. **Configuration**
 The `config.txt` file contains the following default settings:
@@ -98,6 +97,27 @@ The `config.txt` file contains the following default settings:
 - **tokens**: List of API authentication tokens.
 - **include_list**: OUs or groups to include in user searches.
 - **exclude_list**: OUs or groups to exclude from user searches.
+
+## Building the Executable
+### Using Provided Scripts 
+1. **Windows**:
+  Run the provided `build.bat` script in the project directory:
+    ```bat
+    build.bat
+  
+  This will generate the executable in `Output\dist\adRestService.exe`.
+  
+2. **Linux/Mac**:
+  Run the provided `build.sh` script (make it executable first with `chmod +x build.sh`):
+    ```bash
+    ./build.sh
+  
+  This will generate the executable in `Output/dist/adRestService`.
+
+### Notes
+- Ensure `favicon.ico` is in the project directory.
+- UPX is included in the project under the `upx` directory. The build scripts use it by default for compression. If you want to disable compression, remove the `--upx-dir upx` parameter from the scripts.
+
 
 ## Usage
 The service exposes the following endpoints. Use tools like `curl` or Postman to interact with the API.
