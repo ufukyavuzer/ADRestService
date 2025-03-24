@@ -1,3 +1,29 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+===============================================================================
+ AD Rest Service - Active Directory Management API
+===============================================================================
+
+Author: Ufuk Yavuzer
+Created: March 24, 2025
+Version: 1.0.7
+Description: 
+    A Flask-based RESTful API service for managing Active Directory (AD) 
+    contacts and users via LDAPS. Provides endpoints for creating users/contacts, 
+    retrieving user lists, and updating passwords, with a Tkinter GUI for monitoring.
+
+Dependencies:
+    - Flask: Web framework for API endpoints
+    - ldap3: LDAP communication with Active Directory
+    - cryptography: Password encryption
+    - tkinter: GUI for real-time monitoring
+
+License: MIT License
+Contact: [E-posta adresiniz] (optional)
+
+===============================================================================
+"""
 import tkinter as tk
 from tkinter import scrolledtext, messagebox, simpledialog
 from flask import Flask, request, jsonify, render_template_string
