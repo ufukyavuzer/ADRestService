@@ -47,29 +47,18 @@ Follow these steps to set up the project locally:
    - `tk`
    - `pyinstaller`
   
-3. **Configure the Service**:
-   - The first run will generate a `config.txt` file.
-   - Update the file with your AD details:
-     ```json
-     {
-       "ad_server": "ldaps://server.local",
-       "ad_user": "administrator@yourdomain.local",
-       "ad_password": "your_ad_password",
-       "search_base": "DC=YOURDOMAIN,DC=LOCAL",
-       "tokens": ["your_token1", "your_token2"],
-       "include_list": ["OU=IncludeOU,DC=YOURDOMAIN,DC=LOCAL"],
-       "exclude_list": ["CN=Administrators,CN=Builtin,DC=YOURDOMAIN,DC=LOCAL"]
-     }
-   - On the next run, the password will be encrypted and stored securely.
-
-4. **Run the Service**:
+3. **Run the Service**:
    ```bash
    python adRestService.py
    - The Flask server will start on `0.0.0.0:5000`.
    - A Tkinter GUI will display service status and logs.
 
-5. **Configuration**
+4. **Configuration**
 The `config.txt` file contains the following default settings:
+- The first run will generate a `config.txt` file.
+- Update the file with your AD details:
+- On the next run, the password will be encrypted and stored securely.
+  
     ```json
     {
         "ad_server": "ldaps://dc01.server.local",
