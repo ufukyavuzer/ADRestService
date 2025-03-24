@@ -20,7 +20,6 @@ Dependencies:
     - tkinter: GUI for real-time monitoring
 
 License: MIT License
-Contact: [E-posta adresiniz] (optional)
 
 ===============================================================================
 """
