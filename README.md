@@ -33,8 +33,8 @@ Before you begin, ensure you have the following installed:
 Follow these steps to set up the project locally:
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/ufukyavuzer/ad-rest-service.git
-   cd ad-rest-service
+   git clone https://github.com/ufukyavuzer/ADRestService.git
+   cd ADRestService
    
 2. **Install Dependencies**:
    ```bash
@@ -52,7 +52,7 @@ Follow these steps to set up the project locally:
    - Update the file with your AD details:
      ```json
      {
-       "ad_server": "ldaps://your-ad-server.local",
+       "ad_server": "ldaps://server.local",
        "ad_user": "administrator@yourdomain.local",
        "ad_password": "your_ad_password",
        "search_base": "DC=YOURDOMAIN,DC=LOCAL",
@@ -64,7 +64,7 @@ Follow these steps to set up the project locally:
 
 4. **Run the Service**:
    ```bash
-   python adWebService.py
+   python adRestService.py
    - The Flask server will start on `0.0.0.0:5000`.
    - A Tkinter GUI will display service status and logs.
 
